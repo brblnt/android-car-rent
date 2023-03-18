@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.UserPageScreen"
+    android:background="@color/darkGray">
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/user_cars_title"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:rowCount="2"
+            app:columnCount="2">
+
+            <TextView
+                android:id="@+id/textCarTypeTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/car"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textCarType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="?attr/colorSecondaryVariant"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/textCarPriceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/car_price"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textCarPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="?attr/colorSecondaryVariant"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/textDateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_title"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="?attr/colorSecondaryVariant"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/textBarrier2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="?attr/colorPrimary"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textBarrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="?attr/colorSecondaryVariant"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:id="@+id/textUserPriceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_price"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textUserPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="?attr/colorSecondaryVariant"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:layout_margin="5dp"/>
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <ImageView
+                android:id="@+id/imageViewUser"
+                android:layout_width="350dp"
+                android:layout_height="196dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/pic_from_car"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="30dp">
+            <Button
+                android:id="@+id/buttonUserNavLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/nav_left"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="30dp"
+                app:cornerRadius="10sp" />
+
+            <Button
+                android:id="@+id/buttonGiveBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/give_back"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                app:cornerRadius="10sp" />
+            <Button
+                android:id="@+id/buttonUserNavRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/nav_right"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="10dp"
+                app:cornerRadius="10sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="30dp">
+            <Button
+                android:id="@+id/carsRent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cars"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="30dp"
+                app:cornerRadius="10sp"
+                android:backgroundTint="?attr/colorSecondaryVariant"/>
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/back"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="10dp"
+                app:cornerRadius="10sp"
+                android:backgroundTint="?attr/colorSecondaryVariant"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
